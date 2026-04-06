@@ -18,7 +18,7 @@ def load_config():
         return {}
 
 def main():
-    parser = argparse.ArgumentParser(description="PulseAI API Fetcher")
+    parser = argparse.ArgumentParser(description="Your-Chief-AI-Intelligence-Officer API Fetcher")
     parser.add_argument("--include-categories", type=str)
     parser.add_argument("--exclude-categories", type=str)
     parser.add_argument("--include-sources", type=str)
@@ -79,10 +79,10 @@ def main():
             import json
             with open(args.output_file, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"--- PulseAI: 已将 {len(articles)} 条内容保存至 {args.output_file} ---")
+            print(f"--- Your-Chief-AI-Intelligence-Officer: 已将 {len(articles)} 条内容保存至 {args.output_file} ---")
             return
 
-        print(f"--- PulseAI: Fetched {len(articles)} items ---")
+        print(f"--- Your-Chief-AI-Intelligence-Officer: Fetched {len(articles)} items ---")
         def clean_line(text):
             return str(text).replace('\r', '').replace('\n', ' ').strip() if text else ''
             

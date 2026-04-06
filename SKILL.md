@@ -1,11 +1,11 @@
 ---
-name: PulseAI
+name: Your-Chief-AI-Intelligence-Officer
 description: |
   Fetch the latest AI/ML news, open-source projects, social media discussions, and KOL perspectives.
   Supports sophisticated filtering by categories and sources.
 ---
 
-# PulseAI Skill
+# Your-Chief-AI-Intelligence-Officer Skill
 
 When a user wants to explore recent AI news, open source AI projects, or social media discussions, run the `pulse_fetcher.py` script.
 **Important**: You don't need any API credentials. Rate limits are applied based on IP interval and daily limits.

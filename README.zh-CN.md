@@ -1,17 +1,15 @@
-# PulseAI 
+# Your-Chief-AI-Intelligence-Officer
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/frankzch/PulseAI/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/frankzch/PulseAI?style=social)](https://github.com/frankzch/PulseAI/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/frankzch/PulseAI)](https://github.com/frankzch/PulseAI/issues)
-[![GitHub forks](https://img.shields.io/github/forks/frankzch/PulseAI?style=social)](https://github.com/frankzch/PulseAI/network/members)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/frankzch/Your-Chief-AI-Intelligence-Officer?style=social)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/frankzch/Your-Chief-AI-Intelligence-Officer)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/issues)
+[![GitHub forks](https://img.shields.io/github/forks/frankzch/Your-Chief-AI-Intelligence-Officer?style=social)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/network/members)
 
 [English](./README.md) | [中文](./README.zh-CN.md)
 
 ---
 
-## 🚀 PulseAI: 专为 AI Agent 打造的AI信息情报Skill
-
-PulseAI 是一个可以获取实时、全面、深度过滤的一手AI信息的**AI Agent Skill**。**完全免费，开箱即用，不需要任何 API Key，也不需要自己抓取数据**。无论你使用的是 Antigravity、Claude Code、Codex 还是 OpenClaw，一键安装即可让你的智能体接入丰富的 AI 前沿信息流。用最简洁的方式呈现内容，减轻用户的注意力负担，治疗AI信息焦虑，**用最少的时间，获取最全面的信息**。
+Your-Chief-AI-Intelligence-Officer 是一个可以获取实时、全面、深度过滤的一手AI信息的**AI Agent Skill**。**完全免费，开箱即用，不需要任何 API Key，也不需要自己抓取数据**。无论你使用的是 Antigravity、Claude Code、Codex 还是 OpenClaw，一键安装即可让你的智能体接入丰富的 AI 前沿信息流。用最简洁的方式呈现内容，减轻用户的注意力负担，治疗AI信息焦虑，**用最少的时间，获取最全面的信息**。
 
 📊 目前已聚合 **75 个 AI 信息源**（持续增加中，欢迎提供更多信息源地址），涵盖：
 - **15 个新闻资讯源** — 覆盖MarkTechPost、TechCrunch、TheVerge AI、TechReview等主流 AI/ML 行业媒体，及OpenAI、Google AI、Anthropic等AI大厂官方博客
@@ -33,22 +31,22 @@ PulseAI 是一个可以获取实时、全面、深度过滤的一手AI信息的*
 **OpenClaw**
 ```bash
 # 目前为手动安装，后期会提交到 ClawHub
-git clone https://github.com/frankzch/PulseAI.git ~/skills/pulseai
+git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/skills/Your-Chief-AI-Intelligence-Officer
 ```
 
 **Claude Code**
 ```bash
-git clone https://github.com/frankzch/PulseAI.git ~/.claude/skills/pulseai
+git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/.claude/skills/Your-Chief-AI-Intelligence-Officer
 ```
 
 **Antigravity Agent**
 ```bash
-git clone https://github.com/frankzch/PulseAI.git ~/.agents/skills/pulseai
+git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/.agents/skills/Your-Chief-AI-Intelligence-Officer
 ```
 
 **Codex**
 ```bash
-git clone https://github.com/frankzch/PulseAI.git ~/.codex/skills/pulseai
+git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/.codex/skills/Your-Chief-AI-Intelligence-Officer
 ```
 
 ### 🎛️ 修改设置与过滤

@@ -1,17 +1,15 @@
-# PulseAI 
+# Your-Chief-AI-Intelligence-Officer 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/frankzch/PulseAI/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/frankzch/PulseAI?style=social)](https://github.com/frankzch/PulseAI/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/frankzch/PulseAI)](https://github.com/frankzch/PulseAI/issues)
-[![GitHub forks](https://img.shields.io/github/forks/frankzch/PulseAI?style=social)](https://github.com/frankzch/PulseAI/network/members)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/frankzch/Your-Chief-AI-Intelligence-Officer?style=social)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/frankzch/Your-Chief-AI-Intelligence-Officer)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/issues)
+[![GitHub forks](https://img.shields.io/github/forks/frankzch/Your-Chief-AI-Intelligence-Officer?style=social)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/network/members)
 
 [English](./README.md) | [中文](./README.zh-CN.md)
 
 ---
 
-## 🚀 PulseAI: The Universal AI Intelligence Skill Built for AI Agents
-
-PulseAI is an **AI Agent Skill** that fetches real-time, comprehensive, and deeply filtered first-hand AI intelligence. **Completely free, works out of the box — no API keys needed, no self-scraping required.** Whether you use Antigravity, Claude Code, Codex, or OpenClaw, one-click install connects your agent to a rich stream of cutting-edge AI information. Content is presented in the most concise way to reduce your attention burden and cure AI information anxiety — **get the most comprehensive insights in the least amount of time.**
+Your-Chief-AI-Intelligence-Officer is an **AI Agent Skill** that fetches real-time, comprehensive, and deeply filtered first-hand AI intelligence. **Completely free, works out of the box — no API keys needed, no self-scraping required.** Whether you use Antigravity, Claude Code, Codex, or OpenClaw, one-click install connects your agent to a rich stream of cutting-edge AI information. Content is presented in the most concise way to reduce your attention burden and cure AI information anxiety — **get the most comprehensive insights in the least amount of time.**
 
 📊 Currently aggregating **75 AI sources** (and growing — contributions of new sources are welcome!), including:
 - **15 News Sources** — covering mainstream AI/ML industry media like MarkTechPost, TechCrunch, TheVerge AI, TechReview, plus official blogs from OpenAI, Google AI, Anthropic, etc.
@@ -33,22 +31,22 @@ The data processing behind this Agent Skill is powered for free by **[InBrief.in
 **OpenClaw**
 ```bash
 # Currently manual installation, will be submitted to ClawHub later
-git clone https://github.com/frankzch/PulseAI.git ~/skills/pulseai
+git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/skills/Your-Chief-AI-Intelligence-Officer
 ```
 
 **Claude Code**
 ```bash
-git clone https://github.com/frankzch/PulseAI.git ~/.claude/skills/pulseai
+git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/.claude/skills/Your-Chief-AI-Intelligence-Officer
 ```
 
 **Antigravity Agent**
 ```bash
-git clone https://github.com/frankzch/PulseAI.git ~/.agents/skills/pulseai
+git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/.agents/skills/Your-Chief-AI-Intelligence-Officer
 ```
 
 **Codex**
 ```bash
-git clone https://github.com/frankzch/PulseAI.git ~/.codex/skills/pulseai
+git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/.codex/skills/Your-Chief-AI-Intelligence-Officer
 ```
 
 ### 🎛️ Modifying Settings & Filters
