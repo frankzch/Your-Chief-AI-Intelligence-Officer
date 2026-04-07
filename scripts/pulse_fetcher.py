@@ -1,3 +1,11 @@
+# /// script
+# dependencies = [
+#     "requests>=2.28",
+#     "pyyaml>=6.0",
+# ]
+# requires-python = ">=3.9"
+# ///
+
 import argparse
 import locale
 import requests
@@ -19,16 +27,16 @@ def detect_system_language():
 
 I18N = {
     'en': {
-        'saved': '--- Your-Chief-AI-Intelligence-Officer: Saved {count} items to {file} ---',
-        'fetched': '--- Your-Chief-AI-Intelligence-Officer: Fetched {count} items ---',
+        'saved': '--- AI-Intelligence-Skill: Saved {count} items to {file} ---',
+        'fetched': '--- AI-Intelligence-Skill: Fetched {count} items ---',
         'short_summary': 'Short Summary',
         'long_summary': 'Long Summary',
         'link': 'Link',
         'from': 'from',
     },
     'zh': {
-        'saved': '--- Your-Chief-AI-Intelligence-Officer: 已将 {count} 条内容保存至 {file} ---',
-        'fetched': '--- Your-Chief-AI-Intelligence-Officer: 获取到 {count} 条内容 ---',
+        'saved': '--- AI-Intelligence-Skill: 已将 {count} 条内容保存至 {file} ---',
+        'fetched': '--- AI-Intelligence-Skill: 获取到 {count} 条内容 ---',
         'short_summary': '简要摘要',
         'long_summary': '详细摘要',
         'link': '链接',
@@ -40,7 +48,7 @@ def load_config():
     base_dir = os.path.dirname(os.path.dirname(__file__))
     config_path = os.path.join(base_dir, 'config.yaml')
     if not os.path.exists(config_path):
-        config_path = os.path.join(base_dir, 'config.default.yaml')
+        config_path = os.path.join(base_dir, 'assets', 'config.default.yaml')
     try:
         with open(config_path, 'r', encoding='utf-8') as f:
             return yaml.safe_load(f) or {}
@@ -48,7 +56,7 @@ def load_config():
         return {}
 
 def main():
-    parser = argparse.ArgumentParser(description="Your-Chief-AI-Intelligence-Officer API Fetcher")
+    parser = argparse.ArgumentParser(description="AI Intelligence Skill - Fetch AI/ML news, projects, and discussions")
     parser.add_argument("--include-categories", type=str)
     parser.add_argument("--exclude-categories", type=str)
     parser.add_argument("--include-sources", type=str)

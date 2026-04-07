@@ -1,5 +1,5 @@
-# Your-Chief-AI-Intelligence-Officer User Preferences
-# Default configuration
+# AI Intelligence Skill - User Preferences
+# Copy this file to the skill root as 'config.yaml' to override defaults.
 
 # Base API endpoint
 # Change if testing locally (e.g. http://localhost:8000/api/feed/)

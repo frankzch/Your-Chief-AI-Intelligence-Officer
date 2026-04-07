@@ -1,19 +1,17 @@
-# Your-Chief-AI-Intelligence-Officer 
+# AI Intelligence Skill
 
 <p align="center">
-  <img src="./assets/logo.jpg" alt="Your Chief AI Intelligence Officer" width="600">
+  <img src="./assets/logo.jpg" alt="AI Intelligence Skill" width="600">
 </p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/frankzch/Your-Chief-AI-Intelligence-Officer?style=social)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/frankzch/Your-Chief-AI-Intelligence-Officer)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/issues)
-[![GitHub forks](https://img.shields.io/github/forks/frankzch/Your-Chief-AI-Intelligence-Officer?style=social)](https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer/network/members)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/frankzch/ai-intelligence-skill/blob/main/LICENSE)
+[![Agent Skills](https://img.shields.io/badge/AgentSkills-compatible-blue)](https://agentskills.io/)
 
 [English](./README.md) | [中文](./README.zh-CN.md)
 
 ---
 
-Your-Chief-AI-Intelligence-Officer is an **AI Agent Skill** that fetches real-time, comprehensive, and deeply filtered first-hand AI intelligence. **Completely free, works out of the box — no API keys needed, no self-scraping required.** Whether you use Antigravity, Claude Code, Codex, or OpenClaw, one-click install connects your agent to a rich stream of cutting-edge AI information. Content is presented in the most concise way to reduce your attention burden and cure AI information anxiety — **get the most comprehensive insights in the least amount of time.**
+AI Intelligence Skill is an **[AgentSkills](https://agentskills.io/)-compatible AI Agent Skill** that fetches real-time, comprehensive, and deeply filtered first-hand AI intelligence. **Completely free, works out of the box — no API keys needed, no self-scraping required.** Whether you use Antigravity, Claude Code, Codex, or OpenClaw, one-click install connects your agent to a rich stream of cutting-edge AI information. Content is presented in the most concise way to reduce your attention burden and cure AI information anxiety — **get the most comprehensive insights in the least amount of time.**
 
 📊 Currently aggregating **75 AI sources** (and growing — contributions of new sources are welcome!), including:
 - **15 News Sources** — covering mainstream AI/ML industry media like MarkTechPost, TechCrunch, TheVerge AI, TechReview, plus official blogs from OpenAI, Google AI, Anthropic, etc.
@@ -43,22 +41,22 @@ The data processing behind this Agent Skill is powered for free by **[InBrief.in
 **OpenClaw**
 ```bash
 # Currently manual installation, will be submitted to ClawHub later
-git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/skills/Your-Chief-AI-Intelligence-Officer
+git clone https://github.com/frankzch/ai-intelligence-skill.git ~/skills/ai-intelligence-skill
 ```
 
 **Claude Code**
 ```bash
-git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/.claude/skills/Your-Chief-AI-Intelligence-Officer
+git clone https://github.com/frankzch/ai-intelligence-skill.git ~/.claude/skills/ai-intelligence-skill
 ```
 
 **Antigravity Agent**
 ```bash
-git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/.agents/skills/Your-Chief-AI-Intelligence-Officer
+git clone https://github.com/frankzch/ai-intelligence-skill.git ~/.agents/skills/ai-intelligence-skill
 ```
 
 **Codex**
 ```bash
-git clone https://github.com/frankzch/Your-Chief-AI-Intelligence-Officer.git ~/.codex/skills/Your-Chief-AI-Intelligence-Officer
+git clone https://github.com/frankzch/ai-intelligence-skill.git ~/.codex/skills/ai-intelligence-skill
 ```
 
 ### 🎛️ Modifying Settings & Filters
@@ -77,6 +75,9 @@ The agent automatically understands your intent and translates it into precise f
 - 🔗 **Link Display** — Choose whether to show original article links
 - 🌐 **Language** — Choose output language (English or Chinese). Defaults to your system language; falls back to English if neither
 - 💾 **Output Format** — Results can be printed directly to the terminal or exported as a JSON file
+
+### 🔧 AgentSkills Compatible
+This skill follows the [AgentSkills](https://agentskills.io/) open standard. The `SKILL.md` file contains all metadata and instructions needed for any compatible agent to discover, activate, and execute this skill automatically.
 
 ### 🤝 Contributing
 We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
