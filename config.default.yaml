@@ -5,6 +5,9 @@
 # Change if testing locally (e.g. http://localhost:8000/api/feed/)
 api_host: "https://inbrief.info/api/feed/"
 
+# Output language: "en" or "zh". Defaults to system locale if not set.
+# language: ""
+
 # Default filtering logic. Command line arguments override these.
 # include_categories: ""
 # exclude_categories: ""

@@ -67,6 +67,7 @@ The agent automatically understands your intent and translates it into precise f
 - 🔢 **Result Limit** — Control the number of items returned (default: 20)
 - 📝 **Summary Display** — Choose whether to show short summaries, long summaries
 - 🔗 **Link Display** — Choose whether to show original article links
+- 🌐 **Language** — Choose output language (English or Chinese). Defaults to your system language; falls back to English if neither
 - 💾 **Output Format** — Results can be printed directly to the terminal or exported as a JSON file
 
 ### 🤝 Contributing

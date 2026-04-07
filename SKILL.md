@@ -29,6 +29,7 @@ Options:
   --exclude-sources "src1,src2" (Comma separated)
   --hours INT (default 24)
   --limit INT (default 20)
+  --language "en"|"zh" (default: auto-detect from system locale)
 
 **Error Handling**:
 If you receive HTTP 429 Too Many Requests, explain to the user that they hit an IP rate limit (either the immediate anti-spam interval or the daily max cap) and should wait.

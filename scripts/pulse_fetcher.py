@@ -1,10 +1,40 @@
 import argparse
+import locale
 import requests
 import yaml
 import sys
 import os
 
 API_ENDPOINT = "https://inbrief.info/api/feed"
+
+def detect_system_language():
+    """Detect system language, return 'zh' or 'en'."""
+    try:
+        lang = locale.getdefaultlocale()[0] or ''
+        if lang.startswith('zh'):
+            return 'zh'
+    except Exception:
+        pass
+    return 'en'
+
+I18N = {
+    'en': {
+        'saved': '--- Your-Chief-AI-Intelligence-Officer: Saved {count} items to {file} ---',
+        'fetched': '--- Your-Chief-AI-Intelligence-Officer: Fetched {count} items ---',
+        'short_summary': 'Short Summary',
+        'long_summary': 'Long Summary',
+        'link': 'Link',
+        'from': 'from',
+    },
+    'zh': {
+        'saved': '--- Your-Chief-AI-Intelligence-Officer: 已将 {count} 条内容保存至 {file} ---',
+        'fetched': '--- Your-Chief-AI-Intelligence-Officer: 获取到 {count} 条内容 ---',
+        'short_summary': '简要摘要',
+        'long_summary': '详细摘要',
+        'link': '链接',
+        'from': '来源',
+    },
+}
 
 def load_config():
     base_dir = os.path.dirname(os.path.dirname(__file__))
@@ -29,6 +59,7 @@ def main():
     parser.add_argument("--show-long-summary", type=lambda x: str(x).lower() in ['true', '1', 'yes'], default=None, help="是否显示长摘要 (true/false)")
     parser.add_argument("--show-link", type=lambda x: str(x).lower() in ['true', '1', 'yes'], default=None, help="是否显示文章链接 (true/false，默认为 false)")
     parser.add_argument("--output-file", type=str, default="pulse_output.json", help="导出纯净JSON到文件，传入空字符串则不输出文件")
+    parser.add_argument("--language", type=str, choices=['en', 'zh'], default=None, help="输出语言 (en/zh)，默认跟随系统语言")
     args = parser.parse_args()
     
     config = load_config()
@@ -59,6 +90,16 @@ def main():
     if args.show_link is not None:
         show_link = args.show_link
 
+    # Resolve language: CLI > config > system locale
+    if args.language:
+        lang = args.language
+    elif config.get("language") in ('en', 'zh'):
+        lang = config["language"]
+    else:
+        lang = detect_system_language()
+    t = I18N[lang]
+    params["lang"] = lang
+
     custom_host = config.get("api_host", API_ENDPOINT)
 
     try:
@@ -79,10 +120,10 @@ def main():
             import json
             with open(args.output_file, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"--- Your-Chief-AI-Intelligence-Officer: 已将 {len(articles)} 条内容保存至 {args.output_file} ---")
+            print(t['saved'].format(count=len(articles), file=args.output_file))
             return
 
-        print(f"--- Your-Chief-AI-Intelligence-Officer: Fetched {len(articles)} items ---")
+        print(t['fetched'].format(count=len(articles)))
         def clean_line(text):
             return str(text).replace('\r', '').replace('\n', ' ').strip() if text else ''
             
@@ -95,13 +136,13 @@ def main():
             source = clean_line(a.get('source'))
             url = clean_line(a.get('url'))
             
-            print(f"{idx}. [{cat.upper()}] {title} (from {source})")
+            print(f"{idx}. [{cat.upper()}] {title} ({t['from']} {source})")
             if show_short and a.get('summary'):
-                print(f"   Short Summary: {clean_multi(a['summary'])}")
+                print(f"   {t['short_summary']}: {clean_multi(a['summary'])}")
             if show_long and a.get('long_summary'):
-                print(f"   Long Summary: {clean_multi(a['long_summary'])}")
+                print(f"   {t['long_summary']}: {clean_multi(a['long_summary'])}")
             if show_link and url:
-                print(f"   Link: {url}")
+                print(f"   {t['link']}: {url}")
             print("-" * 40)
     except requests.RequestException as e:
         print(f"API request failed: {e}")
